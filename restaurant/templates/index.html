@@ -16,7 +16,7 @@ HOME
   <meta name="author" content="" />
   <link rel="shortcut icon" href="../../static/images/favicon.png" type="">
 
-  <title> Feane </title>
+
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="../../static/styles/css/bootstrap.css" />
@@ -47,7 +47,7 @@ HOME
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{% url 'index' %}">
             <span>
-              Feane
+              LaFina Bistro
             </span>
           </a>
 
@@ -133,7 +133,7 @@ HOME
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
+              <a href="{% url 'menu' %}" class="order_online">
                 Order Online
               </a>
             </div>
@@ -158,7 +158,7 @@ HOME
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="{% url 'menu' %}" class="btn1">
                         Order Now
                       </a>
                     </div>
@@ -179,7 +179,7 @@ HOME
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="{% url 'menu' %}" class="btn1">
                         Order Now
                       </a>
                     </div>
@@ -200,7 +200,7 @@ HOME
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="{% url 'menu' %}" class="btn1">
                         Order Now
                       </a>
                     </div>
@@ -234,14 +234,14 @@ HOME
               <div class="img-box">
                 <img src="../../static/images/o1.jpg" alt="">
               </div>
-              <div class="detail-box">
+              <div class="detail-box food_item">
                 <h5>
                   Tasty Thursdays
                 </h5>
                 <h6>
                   <span>20%</span> Off
                 </h6>
-                <a href="">
+                <a href="{% url 'menu' %}">
                   Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
@@ -303,14 +303,14 @@ HOME
               <div class="img-box">
                 <img src="../../static/images/o2.jpg" alt="">
               </div>
-              <div class="detail-box">
+              <div class="detail-box food_item">
                 <h5>
                   Pizza Days
                 </h5>
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="">
+                <a href="{% url 'menu' %}">
                   Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
@@ -384,13 +384,7 @@ HOME
         </h2>
       </div>
 
-      <ul class="filters_menu">
-        <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
-      </ul>
+
 
       <div class="filters-content">
         <div class="row grid">
@@ -400,7 +394,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f1.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item" >
                   <h5>
                     Delicious Pizza
                   </h5>
@@ -476,7 +470,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f2.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item" >
                   <h5>
                     Delicious Burger
                   </h5>
@@ -552,7 +546,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f3.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item">
                   <h5>
                     Delicious Pizza
                   </h5>
@@ -628,7 +622,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f4.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item">
                   <h5>
                     Delicious Pasta
                   </h5>
@@ -780,7 +774,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f6.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item">
                   <h5>
                     Delicious Pizza
                   </h5>
@@ -1008,7 +1002,7 @@ HOME
                 <div class="img-box">
                   <img src="../../static/images/f9.png" alt="">
                 </div>
-                <div class="detail-box">
+                <div class="detail-box food_item">
                   <h5>
                     Delicious Pasta
                   </h5>
@@ -1105,7 +1099,7 @@ HOME
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                We Are LaFina Bistro
               </h2>
             </div>
             <p>
@@ -1136,19 +1130,20 @@ HOME
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+           <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" name="name" class="form-control" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="email" name="email" class="form-control" placeholder="Your Email" />
               </div>
               <div>
                 <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
+                  <option value="" disabled selected name="persons">
                     How many persons?
                   </option>
                   <option value="">
