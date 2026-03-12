@@ -845,6 +845,31 @@ MENU
           </div>
         </div>
       </div>
+      {% for meal in meals %}
+      <div>
+        <img src="{{ meal.image.url }}" width="200" alt="">
+        <h3>{{ meal.name }} - ${{meal.price }}</h3>
+        <p>{{ meal.description }}</p>
+      </div>
+      {% endfor %}
+      <br>
+      <form method="POST">
+    {% csrf_token %}
+
+    <input type="text"
+    name="phone"
+    placeholder="Enter phone number "
+    class="form-control mb-3"
+    required>
+
+    <input type="number"
+           name="amount"
+           placeholder="Enter amount (in KES)"
+           class="form-control mb-2"
+           required>
+    <button class="btn btn-success w-100" type="submit" >Pay now</button>
+
+</form>
       <div class="btn-box">
         <a href="{% url 'about' %}">
           Contact us
